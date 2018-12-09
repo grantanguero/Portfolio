@@ -1,0 +1,225 @@
+<!--Juan Ortiz Midterm Project ET712. April 8th -->
+<!-- Last Version -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sport Cars Postcard Generator</title>
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+	<header>
+		<div class="contenu-emballage">
+			<img src="img/sport-car-logo.jpg" class="logo" alt="CARS Logo">
+			<nav>
+				<ul>
+					<li><a class="souris" href="#brand">Brands</a></li>
+					<li><a class="souris" href="#postcard">Postcards</a></li>
+					<li><a class="souris" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="accueil">
+		<h1>World-Class Sport Cars </h1>
+		<p>A great sport car symbolises status, power and sophistication</p>
+	</div>
+
+	<main role="testa">
+		<div class="contenu-emballage">
+			<p id="citation"></p>
+			<p>Throughout the history, there have always been great visionaries, people with a deep sense of practicality, intelligence, courage, and above all, a desire of helping others. When Henry Ford decided that making affordable, reliable cars he probably
+				didn't know the huge impact it would have on the people's life. That was an enormous bet he made, and as we all know now, it worked. He was a precursor, he can definitely be called a revolutionary of the modern era.
+			<h2>A Brief Insight Of The Sport Cars</h2>
+			<figure>
+				<img src="img/old_car_1.jpg" alt="OLD Ford T">
+				<figcaption>An early version of the iconic Ford-T</figcaption>
+			</figure>
+			<p>At various periods sports cars have had very varying characteristics, and I doubt if it is possible to define a sports car in greater detail than by saying that it has better performance than other cars of the same power or engine capacity.<br><br>				" Performance " is made up of speed and acceleration on the one hand, and braking and handling on the other. A sports car may come about in two ways. It may be a debuted version of an existing racing car (or it may even be designed ab initio on semi-racing
+				lines) or it may be a souped-up edition of an existing touring model. It might, perhaps, be worth while to glance back and examine the sources which have influenced the evolution of the sports car down the years, and how the various problems, which
+				have arisen from time to time, have been solved.</p>
+		</div>
+	</main>
+
+<!--   Here you pick your favorite brand car information and logo   -->
+		<div class="ext-emballage">
+			<header class="leclerc">
+			<h1><a name=brand>Most Popular Car Brand List</a></h1>
+			<select id="car-list">
+			<option value="scb">Pick your preferred brand</option>
+			<option value="ar">Alfa Romeo</option>
+			<option value="fe">Ferrari</option>
+			<option value="bu">Bugatti</option>
+			<option value="bw">BMW</option>
+			<option value="ma">Maserati</option>
+			<option value="lc">Lancia</option>
+			<option value="mb">Mercedes Benz</option>
+			<option value="jg">Jaguar</option>
+			<option value="po">Porsche</option>
+			<option value="au">Audi</option>
+			<option value="lb">Lamborghini</option>
+			<option value="al">Alpina</option>
+			<option value="am">Aston Martin</option>
+			<option value="by">Bentley</option>
+			<option value="ni">Nissan</option>
+			</select>
+			</header>
+
+			<div class="testa leclerc">
+				<div class="img-holder">
+					<div>
+						<img id="info-pic" src="img1/col.jpg" alt="Car Logo Collage" width="260" height="260">
+					</div>
+				</div>
+
+		  	<div class="info-holder">
+			  	<p><strong>country: </strong><span id="info-country">International Sport Cars</span></p>
+			  	<p><strong>city: </strong><span id="info-city">Geneve, Switzerland</span></p>
+			  	<p><strong>production: </strong><span id="info-production">850,120,000</span></p>
+			  	<p><strong>founded: </strong><span id="info-founded">1905</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<div class="ext-emballage">
+
+		<div class="contenu-emballage">
+		<header>
+		<h1><a name=postcard>Send a Postcard</a></h1>
+		 <p class="subtitle">Postcards Generator for the elite 15 Brand Sport Cars</p>
+		</header>
+
+			<main role="testa">
+				<div class="premier etape">
+					<h2>1. Choose a Car</h2>
+
+<!--      Here you choose your favorite brand sport car postcard     -->
+					<select name="voitures" id="voitures">
+					<option selected disabled value="empty-car">International Sport Car Bureau</option>
+					<option value="ar">Alfa Romeo</option>
+					<option value="fe">Ferrari</option>
+					<option value="bu">Bugatti</option>
+					<option value="bw">BMW</option>
+					<option value="ma">Maserati</option>
+					<option value="lc">Lancia</option>
+					<option value="mb">Mercedes Benz</option>
+					<option value="jg">Jaguar</option>
+					<option value="po">Porsche</option>
+					<option value="au">Audi</option>
+					<option value="lb">Lamborghini</option>
+					<option value="al">Alpina</option>
+					<option value="am">Aston Martin</option>
+					<option value="by">Bentley</option>
+					<option value="ni">Nissan</option>
+					</select>
+				</div>
+				<div class="deuxieme etape">
+					<h2>2. Enjoy Your Postcard!</h2>
+					<div id="postcard">
+						<p id="greeting">Generate your own Postcard</p>
+						<p id="car-heading">Sport Car Preference</p>
+					</div>
+				</div>
+
+			</main>
+		</div>
+	</div>
+
+	<script src="js/brand-list.js"></script>
+	<script>
+		document.getElementById('car-list').onchange = function() {
+			var selected = this.value;
+
+			document.getElementById('info-pic').src = ('img1/' + selected + '.jpg');
+			document.getElementById('info-country').textContent = sportCar[this.value].country;
+			document.getElementById('info-city').textContent = sportCar[this.value].city;
+			document.getElementById('info-production').textContent = sportCar[this.value].production;
+			document.getElementById('info-founded').textContent = sportCar[this.value].founded;
+		};
+	</script>
+
+	<footer>
+<!--		<p>Droits d'auteur ©Association International de Voiture de Sport</p> -->
+	</footer>
+
+ <!--       This script makes the quotes change with the browser's refresh  -->
+	<script>
+		var quotesArray = [
+
+			'Cars, more than just a hobby, it is more like a compelling passion. - Enzo Ferrari',
+
+			'And of course, gripping the road is the art of traction, the perfect equilibrium of man and machine. - Luca Montezemolo',
+
+			'A craftsman work of imagination, beyond the limits, forming a build of metal brilliance. - Henry Ford',
+
+			'The amazing burning of rubber and gasoline, fusing power with acceleration. - Der Spiegel',
+
+			'A dazzling display of sheer performance brought only to him behind the wheel. - Le Figaro',
+
+			'But be sure to stick to the racing line, smoothly handle throughout the power curve. - The Washington Post',
+
+			'Making certain to keep control and nerve, what drives a man feels satisfied. - BBC London'
+		];
+
+		var randomNumber = Math.floor(Math.random() * quotesArray.length);
+		document.getElementById('citation').textContent = '“' + quotesArray[randomNumber].split(' - ')[0] + '” - ' + quotesArray[randomNumber].split(' - ')[1];
+	</script>
+
+	<div class="recipient">
+		<h1><a name=contact>How you can reach us</a></h1>
+		<p>The International Federation of Sport Cars appreciate your interest in getting acquainted with what we do for the promotion of the sport car throughout the globe. <br>Enter the information requested down below in order to get in contact with us. One of our volunteer coordinators will contact you as soon as possible via either email or phone within a few days.</p>
+	
+<!--	<script src="js/scriptvalidation.js"> </script>  -->
+	<script src="js/scriptvalidation.js"> </script>
+	 	
+	 	<div class="form-recipient">
+			<form id="vol-form">
+
+				<div class="form-section">
+					<label for="first-name">First Name:</label>
+				  <input id="first-name" oninvalid="InvalidMsg(this);" name="first-name"  type="text" required="required"/>
+				</div>
+
+				<div class="form-section">
+					<label for="last-name">Last Name:</label>
+					<input id="last-name" name="last-name" type="text" />
+				</div>
+
+        <div class="form-section">
+					<label for="email">Email:</label>
+					<input id="email" name="email" type="email" />
+		    </div>
+
+				<div class="form-section">
+					<label for="phone">Phone:</label>
+					<input id="phone" name="phone"  type="tel" required="required"/>
+				</div>
+
+				<input id="submit" type="submit" value="Submit" onClick="myValidation(this)";>
+			</form>
+		</div>
+	</div>
+	<footer>
+	<p>Geneve Switzerland <br>Droits d'auteur Juan Ortiz © Generateur de Carte Postale</p>
+	</footer>
+
+	<script>
+		var voitures = document.getElementById('voitures');
+		voitures.onchange = function() {
+			document.getElementById('postcard').style.backgroundImage = 'url(img/' + voitures.value + '@2x.jpg)';
+			document.getElementById('greeting').innerHTML = 'Greetings from';
+			document.getElementById('car-heading').innerHTML = voitures.options[voitures.selectedIndex].text;
+		}
+	</script>
+
+</body>
+</html>

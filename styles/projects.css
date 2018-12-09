@@ -1,0 +1,55 @@
+
+/* --Dropdown styling (projects.css external file)-- */
+
+.dropbtn {
+  /*  background-color: #4CAF50; */     
+    background-color: #002b11;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    margin-left: 45px;
+    margin-top: 85px;
+    opacity: 0.6;
+    width: 230px;
+    height: 35px;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;     
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 45px;
+    margin-top: none;
+    width: 230px; 
+    text-align: center;
+}
+
+.dropdown-content a {      
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #006e00;     
+} 
+
+.dropdown:hover .dropdown-content {
+    display: block;     
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;   
+}

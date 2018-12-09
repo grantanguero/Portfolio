@@ -1,0 +1,240 @@
+/* Building Stylesheet for Portfolio. Juan Ortiz. April 25th  */
+
+   /*------------------------------------*/
+           /* Global styling */
+      /* mystyle.css external file */
+   /*------------------------------------*/
+
+ body {
+   margin: 0;
+   padding: 0;
+   font-family: monospace;
+  /* height:100%; */
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),url(../img/laptop.jpg);
+     
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+ header {
+   height: 6vh;
+   background-color: #001f3f;
+   opacity: 1;
+ }
+
+ .main-nav {
+ 	float: right;
+ 	list-style: none;
+  margin-top: 20px;
+/*  opacity: 0.8; */
+ }
+
+.main-nav li {
+	display: inline-block;
+}
+
+.main-nav li a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	letter-spacing: 2px;
+
+}
+
+.main-nav li.active a {
+	border: 1px solid white;
+}
+
+.main-nav li a:hover {
+	background-color: #fff;
+	border: 1px solid white;
+	transition: .4s;
+	color: #000;
+}
+
+}
+
+.row {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.hero {
+	position: absolute;
+	width: 1200px;
+	height: 600px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+h1 {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 275px;
+}
+
+.logo img {
+	width: 160px;
+	height: 40px;
+	float: left;
+	margin-top: 7.5px;
+	margin-left:70px;
+}
+
+.button {
+  height: 6vh;
+  background-color: #001f3f;
+  margin-top: 850px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.btn {
+/*	border: 1px solid white; */
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+  font-size: 10px;
+	text-transform: uppercase;
+  float: right;
+ 	clear: left;
+  margin-top: 9px;
+  margin-right: 30px;
+  letter-spacing: 1px;
+}
+
+.btn-one {
+	background-color: darkorange;
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-two {
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-three {
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-four {
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-two:hover {
+	background-color: darkorange;
+	transition: all 0.5s ease-in;
+}
+
+.btn-three:hover {
+	background-color: darkorange;
+	transition: all 0.5s ease-in;
+}
+
+.btn-four:hover {
+	background-color: darkorange;
+	transition: all 0.3s ease-in;
+}
+
+   /*------------------------------------*/
+      /* Styling page2 through page5 */
+   /*------------------------------------*/
+.maison {
+	position: absolute;
+	width: 550px;
+	height: 625px;
+	margin-left: 50px;
+	margin-top: 120px;
+	background-color: #001f3f;
+	color: white;
+	font-size: 22px;
+	border: 2px;
+	text-align: center;
+	opacity: 0.7;
+}
+
+
+.h3 {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 40px;
+ 	margin-left: 60px;
+}
+
+p {
+    width: 450px;
+    color: white;
+    font-family: sans-serif;
+  	font-size: 20px;
+  	text-align: left;
+  	margin-top: 35px;
+    margin-left: 60px;
+}
+
+h6 {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+}
+
+h5 {
+	font-size: 25px;
+	text-align: center;
+
+}
+
+  /* --Styling Labs Page-- */
+.labs {
+	position: absolute;
+	width: 255px;
+	height: 55px;
+	margin-left: 100px;
+	margin-top: 100px;
+	background-color: white;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	opacity: 0.3;
+	padding-bottom: 30px;
+}
+
+       /*-- This is the quotes styling --*/
+#quotes {
+	color: lightgreen;
+	font-size: 17px;
+	font-style: oblique;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+    margin-left: 100px;
+	opacity: 0.7;
+}
+
+      /*-- This is the Resume styling --*/
+#resume {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+      /*-- This is the Profile styling --*/
+#profile {
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 30px;
+  text-align: left;
+  opacity: 0.6;
+}  
+  
+
+
+
+
